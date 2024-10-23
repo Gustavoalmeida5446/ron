@@ -2,7 +2,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0px;
-  background-color: rgba(66, 85, 225, 0.178);
+  background-color: #0b0e1f;
 }
 
 ul {
@@ -69,23 +69,26 @@ li {
 
 .center {
   margin: 0;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 p {
-  font-size: 35px;
+  font-size: 3em;
   font-weight: bolder;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #378de5;
+  color: #55A6F7;
   text-align: center;
 }
 
 .author {
   text-align:center;
   font-family: sans-serif;
-  color: rgb(6, 6, 61);
+  color: #8ca3de50;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2em;
 }
