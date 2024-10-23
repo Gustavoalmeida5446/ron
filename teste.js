@@ -208,19 +208,22 @@ makeDogPromise()
 // console.log('escrito por ultimo, mas aparece primeiro');
 
 
-axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes').then(({ data }) => {
-    const quote = document.querySelector('p');
-    quote.innerText = data;
-});
+// axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes').then(({ data }) => {
+//     const quote = document.querySelector('p');
+//     quote.innerText = data;
+// });
 
 
-const btn = document.getElementById('btn');
+function getResFromUrl() {
 
-btn.addEventListener('click', function () {
     axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes').then(({ data }) => {
         const quote = document.querySelector('p');
         quote.innerText = data;
     });
-})
+}
 
+getResFromUrl()
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', getResFromUrl)
                
