@@ -24,22 +24,22 @@
 //     }
 // })
 
-const firstReq = new XMLHttpRequest();
-firstReq.addEventListener('load', function () {
-    console.log('worked');
-    const data = JSON.parse(this.responseText);
-    console.log(data);
-    //const data = console.log(this.responseText);
-    const quote = document.querySelector('p');
-    quote.innerText = data;
+// const firstReq = new XMLHttpRequest();
+// firstReq.addEventListener('load', function () {
+//     console.log('worked');
+//     const data = JSON.parse(this.responseText);
+//     console.log(data);
+//     //const data = console.log(this.responseText);
+//     const quote = document.querySelector('p');
+//     quote.innerText = data;
 
-});
-firstReq.addEventListener('error', () => {
-    console.log('error!!!');
-});
+// });
+// firstReq.addEventListener('error', () => {
+//     console.log('error!!!');
+// });
 
-firstReq.open('GET', 'https://ron-swanson-quotes.herokuapp.com/v2/quotes');
-firstReq.send();
-console.log('request sent!');
+// firstReq.open('GET', 'https://ron-swanson-quotes.herokuapp.com/v2/quotes');
+// firstReq.send();
+// console.log('request sent!');
 
 
